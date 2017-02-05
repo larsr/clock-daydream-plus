@@ -25,7 +25,7 @@ import java.util.List;
 public class ScreensaverMoveSaverRunnable implements Runnable {
     static final long MOVE_DELAY = 60000; // DeskClock.SCREEN_SAVER_MOVE_DELAY;
     static final long SLIDE_TIME = 10000;
-    static final long FADE_TIME = 3000;
+    static final long FADE_TIME = 0;
 
     static final boolean SLIDE = false;
 
@@ -78,8 +78,10 @@ public class ScreensaverMoveSaverRunnable implements Runnable {
         if (xrange == 0 && yrange == 0) {
             delay = 500; // back in a split second
         } else {
-            final int nextx = (int) (Math.random() * xrange);
-            final int nexty = (int) (Math.random() * yrange);
+            // final int nextx = (int) (Math.random() * xrange);
+            // final int nexty = (int) (Math.random() * yrange);
+            final int nextx = (int) (0.5 * xrange);
+            final int nexty = (int) (0.5 * yrange);
 
             if (mSaverView.getAlpha() == 0f) {
                 // jump right there
