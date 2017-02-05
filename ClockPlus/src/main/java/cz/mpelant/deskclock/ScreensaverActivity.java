@@ -49,7 +49,7 @@ public class ScreensaverActivity extends BaseScreenOnActivity {
     public void onResume() {
         super.onResume();
 
-        mDateFormat = getString(R.string.abbrev_wday_month_day_no_year);
+        mDateFormat = getString(R.string.full_wday_month_day_no_year);
         mDateFormatForAccessibility = getString(R.string.full_wday_month_day_no_year);
 
         layoutClockSaver();

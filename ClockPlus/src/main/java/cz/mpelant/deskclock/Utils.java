@@ -297,7 +297,7 @@ public class Utils {
     }
 
     public static void setDateTextView(Context context, TextView dateView) {
-        dateView.setText(new SimpleDateFormat(context.getString(R.string.abbrev_wday_month_day_no_year)).format(new Date()));
+        dateView.setText(new SimpleDateFormat(context.getString(R.string.full_wday_month_day_no_year)).format(new Date()));
     }
 
     public static void setBatteryStatus(Context context, TextView batteryView) {

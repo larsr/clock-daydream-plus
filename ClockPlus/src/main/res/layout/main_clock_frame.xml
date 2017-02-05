@@ -55,11 +55,11 @@
         <TextView android:id="@+id/date"
                   android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
-                  android:textColor="@color/clock_white"
+                  android:textColor="@color/clock_red"
                   style="@style/label"
                   android:gravity="center"
                   android:visibility="visible"
-                />
+            android:textSize="100sp" />
         <TextView android:id="@+id/nextAlarm"
                   android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
