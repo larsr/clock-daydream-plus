@@ -5,8 +5,9 @@ apply from: "$rootDir/android_main.gradle"
 
 
 android {
+
 	defaultConfig {
-		versionName mVersion //value from gradle.properties (it is available automatically)
+		versionName  mVersion //value from gradle.properties (it is available automatically)
 		versionCode getGitCommits()//number of git commits
 	}
 
@@ -37,6 +38,10 @@ android {
 			signingConfig signingConfigs.release
 		}
 	}
+
+    //buildToolsVersion '26.0.2'
+
+
 
 }
 
